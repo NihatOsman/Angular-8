@@ -1,7 +1,7 @@
 import {CountersService} from './counters.service';
 import {Injectable} from '@angular/core';
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 export class UsersService {
   activeUsers = ['Max', 'Anna'];
   inactiveUsers = ['Chris', 'Manu'];
