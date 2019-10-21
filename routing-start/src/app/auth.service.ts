@@ -13,6 +13,7 @@ export class AuthService {
   }
 
   login() {
+    debugger;
     this.loggedIn = true;
   }
 
