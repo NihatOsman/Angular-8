@@ -8,19 +8,19 @@
     </div>
     <div class=" collapse navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
       <ul class="nav navbar-nav">
-        <li><a class="nav-link" routerLink="/recipes">Recipes</a></li>
-        <li><a class="nav-link" routerLink="/shopping-list">Shopping List</a></li>
+        <li routerLinkActive="active"><a class="nav-link" routerLink="/recipes">Recipes</a></li>
+        <li routerLinkActive="active"><a class="nav-link" routerLink="/shopping-list">Shopping List</a></li>
       </ul>
       <ul class="nav navbar-nav ml-auto">
         <li class="dropdown" appDropdown>
-          <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown">Manage <span class="caret"></span>
+          <a  class="dropdown-toggle" role="button" data-toggle="dropdown">Manage <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a href="#">Save Data</a>
+              <a >Save Data</a>
             </li>
             <li>
-              <a href="#">Fetch Data</a>
+              <a >Fetch Data</a>
             </li>
           </ul>
         </li>
