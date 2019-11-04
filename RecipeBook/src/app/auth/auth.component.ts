@@ -4,4 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-auth',
   templateUrl: './auth.components.html'
 })
-export class AuthComponent {}
+export class AuthComponent {
+  isLogingMode = true;
+
+  onSwitchMode() {
+    this.isLogingMode = !this.isLogingMode;
+  }
+}
