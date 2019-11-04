@@ -7,21 +7,23 @@ import { Subject } from 'rxjs';
 @Injectable()
 export class RecipeService {
   recipesChanged = new Subject<Recipe[]>();
-  private recipes: Recipe[] = [
-    new Recipe(
-      'Another test Recipe',
-      'this is simply a test',
-      'https://static01.nyt.com/images/2017/09/27/dining/27KITCHENSAUSAGES1/27KITCHENSAUSAGES-articleLarge.jpg',
-      [new Ingredient('Meat', 1), new Ingredient('Fries', 20)]
-    ),
+  // private recipes: Recipe[] = [
+  //   new Recipe(
+  //     'Another test Recipe',
+  //     'this is simply a test',
+  //     'https://static01.nyt.com/images/2017/09/27/dining/27KITCHENSAUSAGES1/27KITCHENSAUSAGES-articleLarge.jpg',
+  //     [new Ingredient('Meat', 1), new Ingredient('Fries', 20)]
+  //   ),
 
-    new Recipe(
-      'A TEST Recipe',
-      'this is simply a test',
-      'https://static01.nyt.com/images/2017/09/27/dining/27KITCHENSAUSAGES1/27KITCHENSAUSAGES-articleLarge.jpg',
-      [new Ingredient('Chicken', 2), new Ingredient('Fries', 10)]
-    )
-  ];
+  //   new Recipe(
+  //     'A TEST Recipe',
+  //     'this is simply a test',
+  //     'https://static01.nyt.com/images/2017/09/27/dining/27KITCHENSAUSAGES1/27KITCHENSAUSAGES-articleLarge.jpg',
+  //     [new Ingredient('Chicken', 2), new Ingredient('Fries', 10)]
+  //   )
+  // ];
+
+  private recipes: Recipe[] = [];
 
   constructor(private shoppingListService: ShoppingListService) {}
 
