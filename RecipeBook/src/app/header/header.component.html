@@ -33,7 +33,7 @@
       </ul>
       <ul class="nav navbar-nav ml-auto">
         <li *ngIf="isAuthenticated">
-          <a>Logout</a>
+          <a style="cursor: pointer;" (click)="onLogout()">Logout</a>
         </li>
         <li class="dropdown" appDropdown *ngIf="isAuthenticated">
           <a class="dropdown-toggle" role="button" data-toggle="dropdown"
