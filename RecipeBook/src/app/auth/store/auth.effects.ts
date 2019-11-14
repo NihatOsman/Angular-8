@@ -1,7 +1,7 @@
 import { Actions, ofType, Effect } from '@ngrx/effects';
 import * as AuthActions from './auth.actions';
 import { switchMap, catchError, map, tap } from 'rxjs/operators';
-import { AuthResponseData, AuthService } from '../auth.service';
+import { AuthService } from '../auth.service';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { of, throwError } from 'rxjs';
